@@ -38,6 +38,42 @@ $( document ).ready(function() {
         polyfill: false
     });
 
+    $('.range-sediments').on('input', function(){
+        if ( this.value > 3 ) {
+            $('.visconsity').hide();
+            $('.contamination').hide();
+        }
+        else {
+            $('.visconsity').show();
+            $('.contamination').show();
+        }
+
+    });
+
+    $('.range-viscosity').on('input', function(){
+        if ( this.value > 3 ) {
+            $('.sediments').hide();
+            $('.contamination').hide();
+        }
+        else {
+            $('.sediments').show();
+            $('.contamination').show();
+        }
+
+    });
+
+    $('.range-contamination').on('input', function(){
+        if ( this.value > 3 ) {
+            $('.sediments').hide();
+            $('.visconsity').hide();
+        }
+        else {
+            $('.sediments').show();
+            $('.visconsity').show();
+        }
+
+    });
+
 });
 
    /* $.ajax({
