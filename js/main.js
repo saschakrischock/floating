@@ -38,7 +38,7 @@ $( document ).ready(function() {
         polyfill: false
     });
 
-    $('.range-sediments').on('input', function(){
+    $range_one.on('input', function(){
         if ( this.value > 3 ) {
             $('.visconsity').hide();
             $('.contamination').hide();
@@ -50,7 +50,7 @@ $( document ).ready(function() {
 
     });
 
-    $('.range-viscosity').on('input', function(){
+    $range_two.on('input', function(){
         if ( this.value > 3 ) {
             $('.sediments').hide();
             $('.contamination').hide();
@@ -62,7 +62,7 @@ $( document ).ready(function() {
 
     });
 
-    $('.range-contamination').on('input', function(){
+    $range_three.on('input', function(){
         if ( this.value > 3 ) {
             $('.sediments').hide();
             $('.visconsity').hide();
