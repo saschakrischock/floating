@@ -15,10 +15,30 @@ $(function() {
 
             $($(entry).get().reverse()).each(function() {
             //make sure this matches your column labels when you change the source sheet
-            $('.results').prepend('<div class='+'"item '+this.gsx$term.$t+'">'+this.gsx$word.$t+'</div>');
+            $('.results').prepend('<div class='+'"item '+this.gsx$category.$t+'">'+this.gsx$word.$t+'</div>');
         });
 
     });
+});
+
+
+$( document ).ready(function() {
+    var $range_one = $('.range-sediments');
+    var $range_two = $('.range-viscosity');
+    var $range_three = $('.range-contamination');
+
+// Initialize
+    $range_one.rangeslider({
+        polyfill: false
+    });
+    $range_two.rangeslider({
+        polyfill: false
+    });
+    $range_three.rangeslider({
+        polyfill: false
+    });
+
+
 });
 
    /* $.ajax({
