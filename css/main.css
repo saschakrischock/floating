@@ -285,3 +285,13 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+.description {
+    width: 300px;
+    float: right;
+    display: none;
+}
+
+.item:hover .description {
+    display: block;
+}

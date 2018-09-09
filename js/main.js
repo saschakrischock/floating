@@ -15,7 +15,7 @@ $(function() {
 
             $($(entry).get().reverse()).each(function() {
             //make sure this matches your column labels when you change the source sheet
-            $('.results').prepend('<div class='+'"item '+this.gsx$category.$t+'">'+this.gsx$word.$t+'</div>');
+            $('.results').prepend('<div class='+'"item '+this.gsx$category.$t+'">'+this.gsx$word.$t+'<div class="description">'+this.gsx$description.$t+'</div></div>');
         });
 
     });
@@ -23,6 +23,7 @@ $(function() {
 
 
 $( document ).ready(function() {
+
     var $range_one = $('.range-sediments');
     var $range_two = $('.range-viscosity');
     var $range_three = $('.range-contamination');
@@ -73,6 +74,7 @@ $( document ).ready(function() {
         }
 
     });
+
 
 });
 
