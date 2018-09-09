@@ -38,7 +38,6 @@ $( document ).ready(function() {
         polyfill: false
     });
 
-
 });
 
    /* $.ajax({
