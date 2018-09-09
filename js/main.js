@@ -6,7 +6,7 @@ $(function() {
     var googleSheetKey = '1QzXXi9vaztIcYM6MNXO60IrLVeK4biwPpgjYJQfRJOk';
 
 
-    var url = 'https://spreadsheets.google.com/feeds/list/' + googleSheetKey + '/od6/public/values?alt=json';
+    var url = 'https://spreadsheets.google.com/feeds/list/' + googleSheetKey + '/od6/public/values?alt=json' ;
 
 
     $.getJSON(url, function(data) {
@@ -16,6 +16,7 @@ $(function() {
             $($(entry).get().reverse()).each(function() {
             //make sure this matches your column labels when you change the source sheet
             $('.results').prepend('<div class='+'"item '+this.gsx$category.$t+'">'+this.gsx$word.$t+'</div>');
+                $('.results').prepend('<div class='+'"description '+this.gsx$category.$t+'">'+this.gsx$description.$t+'</div>');
         });
 
     });

@@ -10,11 +10,27 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+
+
 html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    font-family: Helvetica;
+
 }
+
+h1 {
+    font-size: 1.6em;
+    font-weight: 300;
+}
+
+output {
+    font-size: 2em;
+    padding: .3em;
+}
+
+.description: {padding-left: 34px;}
 
 /*
  * Remove text-shadow in selection highlight:
@@ -80,6 +96,7 @@ fieldset {
 
 textarea {
     resize: vertical;
+
 }
 
 /* ==========================================================================
@@ -225,6 +242,16 @@ textarea {
         -webkit-box-shadow: none !important;
         box-shadow: none !important;
         text-shadow: none !important;
+    }
+
+    .inputs: {float: left;
+
+    }
+
+    .list: {
+        max-width: 80%;
+        float: right;
+
     }
 
     a,
