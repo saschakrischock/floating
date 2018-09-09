@@ -30,7 +30,6 @@ output {
     padding: .3em;
 }
 
-.description: {padding-left: 34px;}
 
 /*
  * Remove text-shadow in selection highlight:
@@ -244,15 +243,6 @@ textarea {
         text-shadow: none !important;
     }
 
-    .inputs: {float: left;
-
-    }
-
-    .list: {
-        max-width: 80%;
-        float: right;
-
-    }
 
     a,
     a:visited {
@@ -321,4 +311,15 @@ textarea {
 
 .item:hover .description {
     display: block;
+}
+
+.inputs {
+    float: left;
+
+}
+
+.list {
+    max-width: 80%;
+    float: right;
+
 }
