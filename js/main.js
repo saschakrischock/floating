@@ -1,10 +1,27 @@
 $(function() {
 
+
+
+
     var googleSheetKey = '1QzXXi9vaztIcYM6MNXO60IrLVeK4biwPpgjYJQfRJOk';
 
 
     var url = 'https://spreadsheets.google.com/feeds/list/' + googleSheetKey + '/od6/public/values?alt=json';
-    $.ajax({
+
+
+    $.getJSON(url, function(data) {
+
+        var entry = data.feed.entry;
+
+            $($(entry).get().reverse()).each(function() {
+            //make sure this matches your column labels when you change the source sheet
+            $('.results').prepend('<div class='+'"item '+this.gsx$term.$t+'">'+this.gsx$word.$t+'</div>');
+        });
+
+    });
+});
+
+   /* $.ajax({
         url: url,
         dataType: 'json',
         success: function(data) {
@@ -45,4 +62,4 @@ $(function() {
     }
 
 
-});
+}); */
