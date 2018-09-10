@@ -30,6 +30,10 @@ output {
     padding: .3em;
 }
 
+.item.contamination {margin-left: 15%;
+padding-bottom: 4px;}
+.item.viscosity {margin-left: 15%;padding-bottom: 4px;}
+.item.sediments {margin-left: 15%;padding-bottom: 4px;}
 
 /*
  * Remove text-shadow in selection highlight:
@@ -220,9 +224,9 @@ textarea {
 }
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
@@ -283,6 +287,7 @@ textarea {
 
     thead {
         display: table-header-group;
+
     }
 
     tr,
@@ -306,15 +311,17 @@ textarea {
 .description {
     width: 300px;
     float: right;
-    display: none;
+    display: block;
 }
 
 .item:hover .description {
-    display: block;
+    font-size: 26px;
 }
 
 .inputs {
     float: left;
+
+.input.range-viscosity {padding-left: 40px;}
 
 }
 
@@ -322,4 +329,12 @@ textarea {
     max-width: 80%;
     float: right;
 
+}
+
+.About {position: fixed;
+    font-size: 100px;
+}
+
+.item:hover .About {
+    display: inline-block;
 }
