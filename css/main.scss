@@ -1,25 +1,36 @@
 /*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+
+
+
 html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
-  font-family: Helvetica; }
+  font-family: Helvetica;
+
+}
 
 h1 {
   font-size: 1.6em;
-  font-weight: 300; }
+  font-weight: 300;
+}
 
 output {
   font-size: 5em;
-  padding: .3em; }
+  padding: .3em;
+}
+
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -30,72 +41,106 @@ output {
  *
  * Customize the background color to match your design.
  */
+
 ::-moz-selection {
   background: #b3d4fc;
-  text-shadow: none; }
+  text-shadow: none;
+}
 
 ::selection {
   background: #b3d4fc;
-  text-shadow: none; }
+  text-shadow: none;
+}
 
 /*
  * A better looking default horizontal rule
  */
+
 hr {
   display: block;
   height: 1px;
   border: 0;
   border-top: 1px solid #ccc;
   margin: 1em 0;
-  padding: 0; }
+  padding: 0;
+}
 
 /*
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers:
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
+
 audio,
 canvas,
 iframe,
 img,
 svg,
 video {
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
 /*
  * Remove default fieldset styles.
  */
+
 fieldset {
   border: 0;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 /*
  * Allow only vertical resizing of textareas.
  */
+
 textarea {
-  resize: vertical; }
+  resize: vertical;
+
+}
 
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
+
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
-  padding: 0.2em 0; }
+  padding: 0.2em 0;
+}
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
 /*
  * Hide visually and from screen readers
  */
+
 .hidden {
-  display: none !important; }
+  display: none !important;
+}
 
 /*
  * Hide only visually, but have it available for screen readers:
@@ -105,6 +150,7 @@ textarea {
  *    causes content to wrap 1 word per line:
  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
  */
+
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -114,14 +160,15 @@ textarea {
   padding: 0;
   position: absolute;
   width: 1px;
-  white-space: nowrap;
-  /* 1 */ }
+  white-space: nowrap; /* 1 */
+}
 
 /*
  * Extends the .visuallyhidden class to allow the element
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
+
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -130,13 +177,16 @@ textarea {
   overflow: visible;
   position: static;
   width: auto;
-  white-space: inherit; }
+  white-space: inherit;
+}
 
 /*
  * Hide visually and from screen readers, but maintain layout
  */
+
 .invisible {
-  visibility: hidden; }
+  visibility: hidden;
+}
 
 /*
  * Clearfix: contain floats
@@ -149,117 +199,156 @@ textarea {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
+
 .clearfix:before,
 .clearfix:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */ }
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
 
 .clearfix:after {
-  clear: both; }
+  clear: both;
+}
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
 @media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */ }
-@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */ }
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
+
 @media print {
   *,
   *:before,
   *:after {
     background: transparent !important;
-    color: #000 !important;
-    /* Black prints faster */
+    color: #000 !important; /* Black prints faster */
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
-    text-shadow: none !important; }
+    text-shadow: none !important;
+  }
+
 
   a,
   a:visited {
-    text-decoration: underline; }
+    text-decoration: underline;
+  }
 
   a[href]:after {
-    content: " (" attr(href) ")"; }
+    content: " (" attr(href) ")";
+  }
 
   abbr[title]:after {
-    content: " (" attr(title) ")"; }
+    content: " (" attr(title) ")";
+  }
+
 
   /*
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
+
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
-    content: ""; }
+    content: "";
+  }
 
   pre {
-    white-space: pre-wrap !important; }
-
+    white-space: pre-wrap !important;
+  }
   pre,
   blockquote {
     border: 1px solid #999;
-    page-break-inside: avoid; }
+    page-break-inside: avoid;
+  }
 
   /*
    * Printing Tables:
    * http://css-discuss.incutio.com/wiki/Printing_Tables
    */
+
   thead {
-    display: table-header-group; }
+    display: table-header-group;
+
+  }
 
   tr,
   img {
-    page-break-inside: avoid; }
+    page-break-inside: avoid;
+  }
 
   p,
   h2,
   h3 {
     orphans: 3;
-    widows: 3; }
+    widows: 3;
+  }
 
   h2,
   h3 {
-    page-break-after: avoid; } }
-.inputs {
-  float: left; }
+    page-break-after: avoid;
+  }
+}
 
+
+.inputs {
+  float: left;
+}
 .range-viscosity {
-  padding-left: 40px; }
+  padding-left: 40px;
+}
 
 .list {
   max-width: 80%;
-  float: right; }
+  float: right;
+}
 
 .about {
   position: fixed;
-  font-size: 100px; }
+  font-size: 100px;
+}
 
 .item {
   margin-left: 280px;
   width: 25vw;
-  position: relative; }
-  .item img {
-    display: none; }
-  .item:hover img {
-    display: block; }
-  .item:hover .about {
-    display: inline-block; }
-  .item:hover .description {
+  position: relative;
+
+  img {
+    display: none;
+  }
+
+  &:hover img {
     display: block;
-    border-width: 2px;
-    border-style: solid;
-    border-color: black; }
-  .item .description {
+  }
+
+  &:hover .about {
+    display: inline-block;
+  }
+
+  &:hover .description {
+    display: block;
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+  }
+
+  .description {
     font-size: 12px;
     width: 300px;
     float: right;
@@ -269,12 +358,15 @@ textarea {
     /* float: right; */
     /* padding-right: 420px; */
     /* display: none; */
-    /* right: -30vw; */ }
+    /* right: -30vw; */
+  }
+}
+
 
 .regler1 {
   padding-left: 10px;
-  background-image: linear-gradient(lightblue, rosybrown); }
-  .regler1 .rangeslider:before {
+  background-image: linear-gradient(lightblue, rosybrown);
+  .rangeslider:before {
     content: 'viscosity';
     font-size: 32px;
     position: absolute;
@@ -282,11 +374,13 @@ textarea {
     text-transform: uppercase;
     font-family: papyrus;
     top: 80px;
-    transform: rotate(-90deg); }
+    transform: rotate(-90deg);
+  }
+}
 
 .regler2 {
-  padding-left: 100px; }
-  .regler2 .rangeslider:before {
+  padding-left: 100px;
+  .rangeslider:before {
     content: 'contamination';
     font-size: 32px;
     position: absolute;
@@ -294,11 +388,13 @@ textarea {
     text-transform: uppercase;
     font-family: papyrus;
     top: 130px;
-    transform: rotate(-90deg); }
+    transform: rotate(-90deg);
+  }
+}
 
 .regler3 {
-  padding-left: 190px; }
-  .regler3 .rangeslider:before {
+  padding-left: 190px;
+  .rangeslider:before {
     content: 'sediments';
     font-size: 32px;
     position: absolute;
@@ -306,37 +402,32 @@ textarea {
     text-transform: uppercase;
     font-family: papyrus;
     top: 91px;
-    transform: rotate(-90deg); }
+    transform: rotate(-90deg);
+  }
+}
 
 .library {
-  padding-left: 220px; }
+  padding-left: 220px;
+}
 
-.item.viscosity {
-  padding-bottom: 4px;
-  font-family: "Arial Black";
-  font-size: 20px; }
 
-.item.contamination {
-  padding-bottom: 4px;
-  font-family: "American Typewriter";
-  font-size: 20px; }
+.item.viscosity {padding-bottom: 4px;font-family: "Arial Black"; font-size: 20px;}
+.item.contamination {padding-bottom: 4px;  font-family: "American Typewriter"; font-size: 20px;}
+.item.sediments {padding-bottom: 4px;font-family: "Times New Roman"; font-size: 20px;}
 
-.item.sediments {
-  padding-bottom: 4px;
-  font-family: "Times New Roman";
-  font-size: 20px; }
 
 .backgroundimage-1 {
   display: none;
   background-image: url("http://gallica.bnf.fr/iiif/ark:/12148/btv1b6000786m/f603/1027,1830,1373,942/1373,942/0/native.jpg");
   width: 100vw;
-  height: 100vh;
-  position: fixed;
+  height:100vh;
+  position:fixed;
   top: 0;
   left: 0;
   z-index: -1;
-  pointer-events: none; }
-  .backgroundimage-1.show-background {
-    display: block; }
+  pointer-events: none;
 
-/*# sourceMappingURL=main.css.map */
+  &.show-background {
+    display: block;
+  }
+}

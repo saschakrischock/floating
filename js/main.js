@@ -15,7 +15,7 @@ $(function() {
 
             $($(entry).get().reverse()).each(function() {
             //make sure this matches your column labels when you change the source sheet
-            $('.results').prepend('<div class='+'"item '+this.gsx$category.$t+'">'+this.gsx$word.$t+'<div class="description">'+this.gsx$description.$t+'</div></div>');
+            $('.results').prepend('<div class='+'"item '+this.gsx$category.$t+'">'+this.gsx$word.$t+'<div class="description">'+this.gsx$description.$t+'<img src='+'"'+this.gsx$image.$t+'"/></div></div>');
         });
 
     });
@@ -53,6 +53,7 @@ $( document ).ready(function() {
 
     });
 
+
     $range_two.on('input', function(){
         if ( this.value > 3 ) {
             $('.sediments').hide();
@@ -61,6 +62,16 @@ $( document ).ready(function() {
         else {
             $('.sediments').show();
             $('.contamination').show();
+        }
+
+    });
+
+    $range_two.on('input', function(){
+        if ( this.value > 7 ) {
+            $('.backgroundimage-1').addClass("show-background");
+        }
+        else {
+            $('.backgroundimage-1').removeClass("show-background");
         }
 
     });
