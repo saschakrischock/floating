@@ -26,14 +26,16 @@ h1 {
 }
 
 output {
-    font-size: 2em;
+    font-size: 5em;
     padding: .3em;
 }
 
 .item.contamination {margin-left: 15%;
-padding-bottom: 4px;}
-.item.viscosity {margin-left: 15%;padding-bottom: 4px;}
-.item.sediments {margin-left: 15%;padding-bottom: 4px;}
+padding-bottom: 4px;
+font-family: "American Typewriter"; font-size: 20px;}
+
+.item.viscosity {margin-left: 15%;padding-bottom: 4px;font-family: "Arial Black"; font-size: 20px;}
+.item.sediments {margin-left: 15%;padding-bottom: 4px;font-family: "Times New Roman"; font-size: 20px;}
 
 /*
  * Remove text-shadow in selection highlight:
@@ -309,6 +311,7 @@ textarea {
 }
 
 .description {
+    font-size: 12px;
     width: 300px;
     float: right;
     display: block;
