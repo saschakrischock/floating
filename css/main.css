@@ -313,7 +313,7 @@ textarea {
 .description {
     font-size: 12px;
     width: 300px;
-    float: right;
+    float: right
     display: block;
 }
 
@@ -341,3 +341,10 @@ textarea {
 .item:hover .About {
     display: inline-block;
 }
+
+.regler1 {padding-left: 10px;
+    background-image: linear-gradient(lightblue, rosybrown);}
+.regler2 {padding-left: 100px;}
+.regler3 {padding-left: 190px;}
+
+.library {padding-left: 220px;}

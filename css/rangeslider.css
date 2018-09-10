@@ -1,6 +1,7 @@
 .rangeslider,
 .rangeslider__fill {
   display: block;
+
   -moz-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);
@@ -25,12 +26,21 @@
 .rangeslider--vertical {
   width: 80px;
   min-height: 100%;
-  margin-left: 20px;
 }
 
 .rangeslider--disabled {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
   opacity: 0.4;
+}
+
+.rangeslider2__fill {
+  background-image: linear-gradient(lightblue, rosybrown);
+  position: absolute;
+}
+
+.rangeslider3__fill {
+  background-image: linear-gradient(goldenrod, yellowgreen);
+  position: absolute;
 }
 
 .rangeslider__fill {
