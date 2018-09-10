@@ -313,12 +313,13 @@ textarea {
 .description {
     font-size: 12px;
     width: 300px;
-    float: right
-    display: block;
+    float: right;
+    padding-right: 370px;
+    display: none;
 }
 
 .item:hover .description {
-    font-size: 26px;
+    display: block;
 }
 
 .inputs {
