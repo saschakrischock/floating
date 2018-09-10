@@ -30,12 +30,13 @@ output {
     padding: .3em;
 }
 
-.item.contamination {margin-left: 15%;
+.item.contamination {margin-left: 110px;
 padding-bottom: 4px;
 font-family: "American Typewriter"; font-size: 20px;}
 
-.item.viscosity {margin-left: 15%;padding-bottom: 4px;font-family: "Arial Black"; font-size: 20px;}
-.item.sediments {margin-left: 15%;padding-bottom: 4px;font-family: "Times New Roman"; font-size: 20px;}
+.item.viscosity {margin-left: 110px;padding-bottom: 4px;font-family: "Arial Black"; font-size: 20px;}
+.item.sediments {margin-left: 110px;padding-bottom: 4px;font-family: "Times New Roman"; font-size: 20px;}
+.item.sediments {margin-left: 110px;padding-bottom: 4px;font-family: "Times New Roman"; font-size: 20px;}
 
 /*
  * Remove text-shadow in selection highlight:
@@ -314,12 +315,15 @@ textarea {
     font-size: 12px;
     width: 300px;
     float: right;
-    padding-right: 370px;
+    padding-right: 420px;
     display: none;
 }
 
 .item:hover .description {
     display: block;
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
 }
 
 .inputs {
