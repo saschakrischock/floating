@@ -245,11 +245,31 @@ textarea {
   font-size: 100px; }
 
 .item {
-  margin-left: 280px;
-  width: 25vw;
-  position: relative; }
+  margin-left: 300px;
+  font-size: 10px;
+  width: 40vw;
+  line-height: 22px;
+  position: relative;
+  transition-timing-function: ease-in;
+  transition-timing-function: cubic-bezier(0.42, 0, 1, 10);
+  transition: font-size 3s;
+  -moz-transition: font-size 3s;
+  /* Firefox 4 */
+  -webkit-transition: font-size 3s;
+  /* Safari and Chrome */
+  -o-transition: font-size 3s;
+  transition: padding-left 3s;
+  -moz-transition: padding-left 3s;
+  /* Firefox 4 */
+  -webkit-transition: padding-left 3s;
+  /* Safari and Chrome */
+  -o-transition: padding-left 3s; }
   .item img {
     display: none; }
+  .item:hover {
+    font-size: 20px;
+    font-family: times;
+    padding-left: 10px; }
   .item:hover img {
     display: block; }
   .item:hover .about {
