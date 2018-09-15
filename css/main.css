@@ -246,25 +246,28 @@ textarea {
 
 .item {
   margin-left: 300px;
-  width: 25vw;
+  font-size: 10px;
+  width: 40vw;
   line-height: 22px;
   position: relative;
-  transition:font-size 1s;
-  -moz-transition:font-size 1s; /* Firefox 4 */
-  -webkit-transition:font-size 1s; /* Safari and Chrome */
-  -o-transition:font-size 1s;
+  transition-timing-function: ease-in;
+  transition-timing-function: cubic-bezier(0.42, 0, 1, 10);
+  transition:font-size 3s;
+  -moz-transition:font-size 3s; /* Firefox 4 */
+  -webkit-transition:font-size 3s; /* Safari and Chrome */
+  -o-transition:font-size 3s;
 
-  transition:padding-left 1s;
-  -moz-transition:padding-left 1s; /* Firefox 4 */
-  -webkit-transition:padding-left 1s; /* Safari and Chrome */
-  -o-transition:padding-left 1s;
+  transition:padding-left 3s;
+  -moz-transition:padding-left 3s; /* Firefox 4 */
+  -webkit-transition:padding-left 3s; /* Safari and Chrome */
+  -o-transition:padding-left 3s;
 
 
 }
 
 .item:hover {font-size: 20px;
   font-family: times;
-padding-left: 10px;}
+padding-left: 100px;}
 
   .item img {
     display: none; }
@@ -272,6 +275,7 @@ padding-left: 10px;}
     display: block; }
   .item:hover .about {
     display: inline-block; }
+
   .item:hover .description {
     display: block;
     border-width: 2px;
