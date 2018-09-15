@@ -245,9 +245,7 @@ textarea {
   font-size: 100px; }
 
 .item {
-  margin-left: 300px;
   font-size: 10px;
-  width: 40vw;
   line-height: 22px;
   position: relative;
   transition-timing-function: ease-in;
@@ -265,7 +263,8 @@ textarea {
   /* Safari and Chrome */
   -o-transition: padding-left 3s; }
   .item img {
-    display: none; }
+    display: none;
+    width: 100%; }
   .item:hover {
     font-size: 20px;
     font-family: times;
@@ -281,11 +280,7 @@ textarea {
     border-color: black; }
   .item .description {
     font-size: 12px;
-    width: 300px;
-    float: right;
     display: none;
-    margin-left: 25vw;
-    position: absolute;
     /* float: right; */
     /* padding-right: 420px; */
     /* display: none; */
@@ -358,5 +353,33 @@ textarea {
   pointer-events: none; }
   .backgroundimage-1.show-background {
     display: block; }
+
+.range-section {
+  width: 25vw;
+  height: 100vh;
+  display: block;
+  float: left;
+  border-right: 1px solid #000; }
+
+.results-section {
+  margin-left: 25vw;
+  font-size: 10px;
+  width: 25vw;
+  border-right: 1px solid #000; }
+
+.description-section {
+  width: 25vw;
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  margin-left: 25vw;
+  border-right: 1px solid #000; }
+
+.image-section {
+  padding: 0 1px;
+  width: 25vw;
+  position: absolute;
+  top: 0;
+  margin-left: 50vw; }
 
 /*# sourceMappingURL=main.css.map */

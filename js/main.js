@@ -15,7 +15,7 @@ $(function() {
 
             $($(entry).get().reverse()).each(function() {
             //make sure this matches your column labels when you change the source sheet
-            $('.results').prepend('<div class='+'"item '+this.gsx$category.$t+'">'+this.gsx$word.$t+'<div class="description">'+this.gsx$description.$t+'<img src='+'"'+this.gsx$image.$t+'"/></div></div>');
+            $('.results').prepend('<div class='+'"item '+this.gsx$category.$t+'">'+this.gsx$word.$t+'<section class="description-section"><div class="description">'+this.gsx$description.$t+'</div></section><section class="image-section"><img src='+'"'+this.gsx$image.$t+'"/></section></div></div>');
         });
 
     });

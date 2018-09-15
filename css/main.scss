@@ -325,9 +325,7 @@ textarea {
 }
 
 .item {
-  margin-left: 300px;
   font-size: 10px;
-  width: 40vw;
   line-height: 22px;
   position: relative;
   transition-timing-function: ease-in;
@@ -344,6 +342,7 @@ textarea {
 
   img {
     display: none;
+    width: 100%;
   }
 
   &:hover {
@@ -369,11 +368,7 @@ textarea {
 
   .description {
     font-size: 12px;
-    width: 300px;
-    float: right;
     display: none;
-    margin-left: 25vw;
-    position: absolute;
     /* float: right; */
     /* padding-right: 420px; */
     /* display: none; */
@@ -449,4 +444,36 @@ textarea {
   &.show-background {
     display: block;
   }
+}
+
+.range-section {
+  width: 25vw;
+  height: 100vh;
+  display: block;
+  float: left;
+  border-right: 1px solid #000;
+}
+
+.results-section {
+  margin-left: 25vw;
+  font-size: 10px;
+  width: 25vw;
+  border-right: 1px solid #000;
+}
+
+.description-section {
+  width: 25vw;
+  position: absolute;
+  height:100vh;
+  top:0;
+  margin-left: 25vw;
+  border-right: 1px solid #000;
+}
+
+.image-section {
+  padding: 0 1px;
+  width: 25vw;
+  position: absolute;
+  top:0;
+  margin-left: 50vw;
 }
