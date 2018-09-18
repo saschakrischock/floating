@@ -11,7 +11,7 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
-  font-family: Helvetica; }
+  font-family: 'Poppins'; }
 
 h1 {
   font-size: 1.6em;
@@ -262,7 +262,7 @@ textarea {
   padding-left:-10vw;}
   .item:hover {
     font-size: 20px;
-    font-family: times;
+    font-family: 'Varela Round', 'serif';
     /* padding-left: 10vw;*/ }
   .item:hover img {
     display: block;
@@ -292,8 +292,9 @@ textarea {
     position: absolute;
     left: -43px;
     text-transform: uppercase;
-    font-family: Helvetica;
-    top: 80px;
+    font-family: 'Poppins', 'sans-serif';
+      letter-spacing: 5px;
+    top: 90px;
     transform: rotate(-90deg); }
 
 .regler2 {
@@ -302,10 +303,11 @@ textarea {
     content: 'contamination';
     font-size: 32px;
     position: absolute;
-    left: -86px;
+    left: -102px;
     text-transform: uppercase;
-    font-family: Helvetica;
-    top: 130px;
+    font-family: 'Poppins', 'sans-serif';
+      letter-spacing: 5px;
+    top: 150px;
     transform: rotate(-90deg); }
 
 .regler3 {
@@ -315,9 +317,10 @@ textarea {
     font-size: 32px;
     position: absolute;
     left: -47px;
-    text-transform: uppercase;
-    font-family: Helvetica;
-    top: 91px;
+      text-transform: uppercase;
+    font-family: 'Poppins', 'sans-serif';
+      letter-spacing: 5px;
+    top: 90px;
     transform: rotate(-90deg); }
 
 .library {
