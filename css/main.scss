@@ -328,8 +328,7 @@ textarea {
   font-size: 10px;
   line-height: 22px;
   position: relative;
-  transition-timing-function: ease-in;
-  transition-timing-function: cubic-bezier(0.42, 0, 1, 10);
+  transition-timing-function: cubic-bezier(.17,.67,.79,-0.09);
 
   img {
     display: none;
@@ -370,14 +369,13 @@ textarea {
 
 .regler1 {
   padding-left: 10px;
-  background-image: linear-gradient(lightblue, rosybrown);
   .rangeslider:before {
     content: 'viscosity';
     font-size: 32px;
     position: absolute;
     left: -43px;
     text-transform: uppercase;
-    font-family: papyrus;
+    font-family: Helvetica;
     top: 80px;
     transform: rotate(-90deg);
   }
@@ -391,7 +389,7 @@ textarea {
     position: absolute;
     left: -86px;
     text-transform: uppercase;
-    font-family: papyrus;
+    font-family: Helvetica;
     top: 130px;
     transform: rotate(-90deg);
   }
@@ -405,7 +403,7 @@ textarea {
     position: absolute;
     left: -47px;
     text-transform: uppercase;
-    font-family: papyrus;
+    font-family: Helvetica;
     top: 91px;
     transform: rotate(-90deg);
   }
@@ -416,9 +414,9 @@ textarea {
 }
 
 
-.item.viscosity {padding-bottom: 4px;font-family: "Arial Black"; font-size: 20px;}
-.item.contamination {padding-bottom: 4px;  font-family: "American Typewriter"; font-size: 20px;}
-.item.sediments {padding-bottom: 4px;font-family: "Times New Roman"; font-size: 20px;}
+.item.viscosity {padding-bottom: 4px;font-family: "Helvetica"; font-size: 20px;}
+.item.contamination {padding-bottom: 4px;  font-family: "Helvetica"; font-size: 20px;}
+.item.sediments {padding-bottom: 4px;font-family: "Helvetica"; font-size: 20px;}
 
 
 .backgroundimage-1 {

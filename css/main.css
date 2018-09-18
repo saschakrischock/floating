@@ -245,30 +245,39 @@ textarea {
   font-size: 100px; }
 
 .item {
-  font-size: 10px;
+  font-size: 11px;
   line-height: 22px;
   position: relative;
-  transition-timing-function: ease-in;
-  transition-timing-function: cubic-bezier(0.42, 0, 1, 10); }
+  transition-timing-function: cubic-bezier(.17,.67,.79,-0.09);
+
+  transition:padding-left 3s;
+  -moz-transition:padding-left 3s; /* Firefox 4 */
+  -webkit-transition:padding-left 3s; /* Safari and Chrome */
+  -o-transition:padding-left 3s;
+
+}
   .item img {
     display: none;
-    width: 100%; }
+    width: 100%;
+  padding-left:-10vw;}
   .item:hover {
     font-size: 20px;
     font-family: times;
-    /* padding-left: 10px; */ }
+    /* padding-left: 10vw;*/ }
   .item:hover img {
-    display: block; }
+    display: block;
+    position: fixed;
+  top:20px;
+  width:25vw;}
   .item:hover .about {
     display: inline-block; }
   .item:hover .description {
     display: block;
-    border-width: 2px;
-    border-style: solid;
-    border-color: black; }
+    }
   .item .description {
     font-size: 12px;
     display: none;
+    padding-left: 10px;
     /* float: right; */
     /* padding-right: 420px; */
     /* display: none; */
@@ -283,7 +292,7 @@ textarea {
     position: absolute;
     left: -43px;
     text-transform: uppercase;
-    font-family: papyrus;
+    font-family: Helvetica;
     top: 80px;
     transform: rotate(-90deg); }
 
@@ -295,7 +304,7 @@ textarea {
     position: absolute;
     left: -86px;
     text-transform: uppercase;
-    font-family: papyrus;
+    font-family: Helvetica;
     top: 130px;
     transform: rotate(-90deg); }
 
@@ -307,31 +316,17 @@ textarea {
     position: absolute;
     left: -47px;
     text-transform: uppercase;
-    font-family: papyrus;
+    font-family: Helvetica;
     top: 91px;
     transform: rotate(-90deg); }
 
 .library {
   padding-left: 220px; }
 
-.item.viscosity {
-  padding-bottom: 4px;
-  font-family: "Arial Black";
-  font-size: 20px; }
-
-.item.contamination {
-  padding-bottom: 4px;
-  font-family: "American Typewriter";
-  font-size: 20px; }
-
-.item.sediments {
-  padding-bottom: 4px;
-  font-family: "Times New Roman";
-  font-size: 20px; }
 
 .backgroundimage-1 {
   display: none;
-  background-image: url("http://gallica.bnf.fr/iiif/ark:/12148/btv1b6000786m/f603/1027,1830,1373,942/1373,942/0/native.jpg");
+  background-image: url("http://wendenstrasse.org/floating/8blacksand.jpg");
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -343,25 +338,28 @@ textarea {
     display: block; }
 
 .range-section {
-  width: 25vw;
-  height: 100vh;
+  width: 20vw;
+  height: 500vw;
   display: block;
   float: left;
-  border-right: 1px solid #000; }
+  border-right: 3px solid #000;
+padding-right: 2vw;}
 
 .results-section {
   margin-left: 25vw;
   font-size: 10px;
+  height: 500vw;
   width: 25vw;
   border-right: 1px solid #000; }
 
 .description-section {
   width: 25vw;
   position: absolute;
-  height: 100vh;
+  height: 500vw;
   top: 0;
   margin-left: 25vw;
-  border-right: 1px solid #000; }
+  border-right: 1px solid #000;
+  }
 
 .image-section {
   padding: 0 1px;
